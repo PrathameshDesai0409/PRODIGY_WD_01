@@ -1,13 +1,12 @@
 /* styles.css */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background-color: #f4f4f4;
-  flex-direction: column;
 }
 
 header {
@@ -53,10 +52,21 @@ header {
   background-color: #222 !important;
 }
 
+main {
+  padding-top: 60px; /* Height of the navbar to offset sections */
+}
+
+section {
+  min-height: 100vh; /* Set each section to fill the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .center-text {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
   color: #333;
   text-align: center;
-  margin-top: 100px; 
 }
